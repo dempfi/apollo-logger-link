@@ -1,0 +1,21 @@
+{
+  "name": "apollo-logger-link",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "repository": "https://github.com/dempfi/apollo-logger-link",
+  "author": "Ike Ku <info@dempfi.com>",
+  "license": "Apache-2.0",
+  "scripts": {
+  },
+  "peerDependencies": {
+    "apollo-link": "^1.2.13",
+    "graphql-tag": "^2.10.3"
+  },
+  "devDependencies": {
+    "apollo-link": "^1.2.13",
+    "graphql-tag": "^2.10.3",
+    "install-peers-cli": "^2.2.0",
+    "typescript": "^3.8.3"
+  }
+}
