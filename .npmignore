@@ -2,3 +2,4 @@ src
 .*
 *.md
 tsconfig.json
+assets
