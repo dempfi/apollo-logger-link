@@ -1,5 +1,4 @@
-import gql from 'graphql-tag'
-import { ApolloLink, Operation } from 'apollo-link'
+import { ApolloLink, gql, Operation } from '@apollo/client'
 
 const getGroup = (collapsed: boolean) =>
   collapsed ? console.groupCollapsed.bind(console) : console.group.bind(console)
@@ -56,7 +55,7 @@ export const loggerLink = (getSchemaName: (operation: Operation) => string) =>
 
     return forward(operation).map(result => {
       const time = Date.now() - operation.getContext().start
-      const errors = result.errors ?? result.data?.[queryName]?.errors
+      const errors = result['errors'] ?? result.data?.[queryName]?.errors
       const hasError = Boolean(errors)
       try {
         getGroup(!hasError)(
