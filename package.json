@@ -1,13 +1,13 @@
 {
   "name": "apollo-logger-link",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "repository": "https://github.com/dempfi/apollo-logger-link",
   "author": "Ike Ku <info@dempfi.com>",
   "license": "Apache-2.0",
   "scripts": {
-    "postinstall": "install-peers"
+    "build": "tsc"
   },
   "peerDependencies": {
     "@apollo/client": "^3.2.2"
